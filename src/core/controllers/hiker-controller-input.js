@@ -22,20 +22,20 @@ export default class HikerControllerInput extends EventEmitter {
     document.addEventListener('keyup', evt => this.onKeyUp(evt), false)
   }
   onKeyDown(evt) {
-    switch (evt.key.toLowerCase()) {
-      case 'w': // w
+    switch (evt.code) {
+      case 'KeyW': // w
         this.keys.forward = true
         break
-      case 'a': // a
+      case 'KeyA': // a
         this.keys.left = true
         break
-      case 's': // s
+      case 'KeyS': // s
         this.keys.backward = true
         break
-      case 'd': // d
+      case 'KeyD': // d
         this.keys.right = true
         break
-      case 'e':
+      case 'KeyE':
         !this.keys.interact && this.trigger('interact')
         this.keys.interact = true
         evt.stopPropagation()
@@ -54,29 +54,29 @@ export default class HikerControllerInput extends EventEmitter {
   }
 
   onKeyUp(evt) {
-    switch (evt.key.toLowerCase()) {
-      case 'w': // w
+    switch (evt.code) {
+      case 'KeyW': // w
         this.keys.forward = false
         break
-      case 'a': // a
+      case 'KeyA': // a
         this.keys.left = false
         break
-      case 's':
+      case 'KeyS':
         this.keys.backward = false
         break
-      case 'd':
+      case 'KeyD':
         this.keys.right = false
         break
-      case 'e':
+      case 'KeyE':
         this.keys.interact = false
         break
-      case ' ': // SPACE
+      case 'Space': // SPACE
         this.keys.space = false
         break
       case 'Shift': // SHIFT
         this.keys.shift = false
         break
-      case 'j':
+      case 'KeyJ':
         this.trigger('exhale')
         this.keys.smoke = false
         break
