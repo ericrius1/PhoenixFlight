@@ -1,7 +1,6 @@
 import Experience from '@/core/experience'
 import * as THREE from 'three'
 import Altar from '@/entities/altar'
-import SnowGlobe from '@/entities/snowglobe'
 
 export default class Forest {
   constructor(gltf) {
@@ -29,8 +28,6 @@ export default class Forest {
         // this.orbitController.view
       } else if (obj.name?.includes('altar')) {
         this.altar = new Altar(obj)
-      } else if (obj.name?.includes('snowglobe')) {
-        this.snowglobe = new SnowGlobe(obj)
       }
     })
     this.animationMixer.clipAction(this.walkClip).play()

@@ -1,5 +1,4 @@
 npm i
-
 npm run dev
 
 wasd for movement

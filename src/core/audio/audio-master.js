@@ -22,33 +22,12 @@ export default class AudioMaster {
     loader.load('/audio/waterfall.mp3', buffer => {
       this.waterfallClip.setBuffer(buffer)
     })
-
-    this.harmonySong = new THREE.PositionalAudio(this.audioListener)
-    this.harmonySong.setRefDistance(40)
-    this.harmonySong.setRolloffFactor(1)
-    this.harmonySong.setVolume(0.7)
-    loader.load('/audio/harmonys-pond.mp3', buffer => {
-      this.harmonySong.setBuffer(buffer)
-    })
-
-    for (const note of HangScale.notes) {
-      // console.log(note)
-      let clip = new THREE.Audio(this.audioListener)
-      // clip.setVolume(1)
-      // let clip = new THREE.Audio(this.audioListener)
-
-      this.drumNotes.set(note.name, clip)
-      loader.load(note.source, buffer => {
-        clip.setBuffer(buffer)
-      })
-    }
   }
 
   begin() {
     // this.waterfallClip.setNodeSource(oscillator)
 
     this.waterfallClip.play()
-    this.harmonySong.play()
 
     // this.scene.add(box)
     // box.add(this.waterfallClip)

@@ -4,29 +4,10 @@ export default [
     data: {},
     items: [
       {
-        name: 'snowglobe',
-        source: '/models/snowglobe.glb',
+        name: 'alpineLevel',
+        source: '/models/alpine-level.glb',
       },
-      {
-        name: 'crystal_heightmap',
-        source: '/textures/crystal_heightmap.jpg',
-      },
-      {
-        name: 'crystal_displacementmap',
-        source: '/textures/crystal_displacementmap.jpg',
-      },
-      {
-        name: 'particleMask',
-        source: '/textures/particle-mask.png',
-      },
-      {
-        name: 'om',
-        source: '/textures/om.jpg',
-      },
-      {
-        name: 'pyramidGirl',
-        source: '/textures/pyramid-girl.jpg',
-      },
+
       {
         name: 'grassBladeDiffuse',
         source: '/textures/grass-blade-diffuse.jpg',
