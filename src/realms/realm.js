@@ -66,7 +66,6 @@ export default class Realm {
           obj.shadow.mapSize.height = 1024
           obj.shadow.bias = -0.001
           this.experience.spotlight = obj
-          obj.add(this.harmonySong)
         }
       })
 
