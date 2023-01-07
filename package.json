@@ -1,0 +1,28 @@
+{
+  "name": "phoenixflight",
+  "private": true,
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "@rollup/plugin-alias": "^3.1.9",
+    "@types/node": "^17.0.35",
+    "vite": "2.9.10",
+    "vite-plugin-glsl": "^0.1.2"
+  },
+  "dependencies": {
+    "@tweakpane/core": "^1.0.9",
+    "@tweakpane/plugin-essentials": "^0.1.4",
+    "@types/three": "^0.143.0",
+    "gsap": "^3.10.4",
+    "normalize-wheel": "^1.0.1",
+    "stats.js": "^0.17.0",
+    "three": "^0.143.0",
+    "three-mesh-bvh": "^0.5.11",
+    "tone": "^14.7.77",
+    "tweakpane": "^3.0.8"
+  }
+}
