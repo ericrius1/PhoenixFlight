@@ -12,11 +12,11 @@ export default class MettaController {
     this.orbitController.dampingFactor = 0.1
     this.orbitController.rotateSpeed = 0.2
     this.orbitController.zoomSpeed = 0.2
-    this.orbitController.zoomSpeed = 0.4
+    this.orbitController.zoomSpeed = 0.3
 
     this.orbitController.minPolarAngle = Math.PI / 16
     this.orbitController.maxPolarAngle = Math.PI - Math.PI / 16
-    this.orbitController.maxDistance = 100000
+    this.orbitController.maxDistance = 10
     this.orbitController.minDistance = 2
     this.experience.register(this)
 
